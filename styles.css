@@ -1,21 +1,17 @@
 :root {
     --header-image: url("https://merinsanity.neocities.org/images/header.png");
-    /* --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif'); (disabling this for now) */
-    /* colors */
     --content: #E55C9B;
 }
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-@font-face #header {
-    font-family: 'Josefin Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-}
 
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    margin: 0;
+    line-height: normal;
+    margin: auto;
     background-color: #1e2030;
     color: #CAD3F5;
 }
@@ -25,22 +21,35 @@ body {
     margin: auto;
 }
 
-/* headings */
+/* headings & navbar text */
+
+#navbar a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.25em;
+    font-weight: 700;
+    font-style: normal;
+}
+
 h1 {
     font-size: 24px;
-    line-height: 0.5em;
     text-decoration: underline;
 }
 
 h2 {
     font-size: 20px;
-    line-height: 0.5em;
-    text-decoration: underline;
+    line-height: 1em;
 }
 
 h3 {
-    line-height: 0.5em;
-    text-decoration: underline;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /* tables */
@@ -53,16 +62,19 @@ table {
 #container a {
     color: #8BD5CA;
     font-weight: medium;
+    text-decoration: none;
 }
 
 #container a:visited {
     color: #8BD5CA;
     font-weight: medium;
+    text-decoration: none;
 }
 
 #container a:hover {
     color: #E55C9B;
     font-weight: medium;
+    text-decoration: underline;
 }
 
 #header {
@@ -94,13 +106,7 @@ table {
 }
 
 /* navigation links*/
-#navbar li a {
-    color: #E55C9B;
-    font-weight: 800;
-    text-decoration: none;
-}
-
-#navbar li a:visited {
+#navbar li a, #navbar li a:visited {
     color: #E55C9B;
     font-weight: 800;
     text-decoration: none;
@@ -167,7 +173,6 @@ footer {
     height: 40px;
     padding: 10px;
     text-align: center;
-    /* this centers the footer text */
 }
 
 h1,
